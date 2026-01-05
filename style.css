@@ -102,6 +102,13 @@ a {
      margin-right: 20vh;
      border-radius: 12px;
      text-align: center;
+     border: none;
+}
+
+h1 {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 .slct {
