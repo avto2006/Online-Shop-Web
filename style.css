@@ -43,3 +43,21 @@ main {
     border-radius: 15px;
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav_com {
+    display: flex;
+    gap: 3vh;
+}
