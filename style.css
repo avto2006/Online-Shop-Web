@@ -110,7 +110,10 @@ a {
      margin-right: 10vh;
      border-radius: 12px;
      text-align: center;
+     cursor: pointer;
 }
+
+
 
 .logo {
     color: white;
@@ -118,3 +121,5 @@ a {
     text-decoration-color: red;
     cursor: pointer;
 }
+
+
