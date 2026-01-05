@@ -5,6 +5,9 @@ fetch('https://fakestoreapi.com/products')
   .then(products => {
        products.forEach(product => {
          const div  = document.createElement('div');
+        //  if(product.category === "women's clothing") {
+        //      div.style.display = 'none'
+        //  }
 
          div.innerHTML = `
           <img class = 'images' src='${product.image}'>
