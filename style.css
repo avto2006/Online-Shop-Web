@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(103, 102, 102);
+}
+
+main {
+    text-align: center;
+}
+
+.images {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2vh;
+}
+
+.hh3 {
+    width: 240px;
+    height: 100px;
+    margin-bottom: 5vh;
+}
+
+.price {
+    color: red;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.productArea {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8vh;
+    align-items: center;
+    text-align: center;
+    margin: 3vh;
+    margin-top: 12vh;
+}
+
+.productArea div {
+    background-color: rgb(184, 182, 182);
+    padding: 5vh;
+    height: 400px;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 15px;
+}
+
