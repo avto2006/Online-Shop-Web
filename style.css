@@ -97,5 +97,9 @@ a {
 }
 
 .search {
-    
+     padding: 1.5vh;
+     width: 450px;
+     margin-right: 10vh;
+     border-radius: 12px;
+     text-align: center;
 }
