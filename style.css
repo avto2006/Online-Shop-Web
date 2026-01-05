@@ -50,6 +50,21 @@ header {
     gap: 5vh;
 }
 
+.authoritation {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 2vh;
+    background-color: white;
+    padding: 1vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user {
+    width: 30px;
+}
+
 ul {
     list-style: none;
 }
