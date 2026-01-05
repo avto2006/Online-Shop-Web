@@ -99,7 +99,22 @@ a {
 .search {
      padding: 1.5vh;
      width: 450px;
+     margin-right: 20vh;
+     border-radius: 12px;
+     text-align: center;
+}
+
+.slct {
+     padding: 1.5vh;
+     width: 150px;
      margin-right: 10vh;
      border-radius: 12px;
      text-align: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
+    cursor: pointer;
 }
