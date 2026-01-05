@@ -14,6 +14,7 @@ fetch('https://fakestoreapi.com/products')
           <h3 class = 'hh3'>${product.title}</h3>
           <p> Rate: ${product.rating.rate} / 10</p>
           <p class='price'>${product.price} $</p>
+          <button class = 'buy'>Buy</button>
          `;
        
       productsDiv.appendChild(div)
