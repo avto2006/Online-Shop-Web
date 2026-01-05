@@ -45,7 +45,7 @@ main {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 5vh;
 }
@@ -59,6 +59,16 @@ header {
     padding: 1vh;
     border-radius: 5px;
     cursor: pointer;
+}
+
+span {
+    color: black;
+}
+
+.lang {
+    padding: 1.5vh;
+    border-radius: 25px;
+    border: none;
 }
 
 .buy {
@@ -75,15 +85,17 @@ header {
     width: 30px;
 }
 
-ul {
-    list-style: none;
-}
+
 
 a {
     text-decoration: none;
 }
 
-.nav_com {
+.nav_right {
     display: flex;
-    gap: 3vh;
+    gap: 4vh;
+}
+
+.search {
+    
 }
