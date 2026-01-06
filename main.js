@@ -8,21 +8,21 @@ fetch('https://fakestoreapi.com/products')
   .then(products => {
        allProducts = products;
        renderProducts(allProducts);
-       mensCloth =  products.filter(product  => 
-        product.category === "men's clothing"
 
-      )
-      
 
-  })
+      })
 
   select.addEventListener('change', () => {
      const value = select.value;
 
-     if(value === 'All item') {
+     if(value === 'all') {
        renderProducts(allProducts)
-     } else if(value === "Men's Clothes") {
-       renderProducts(mensCloth)
+     } else {
+      const filtred = allProducts.filter(product => {
+         product.category === value
+      });
+      renderProducts(filtred)
+      
      }
      
   });
