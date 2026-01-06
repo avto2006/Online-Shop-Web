@@ -1,13 +1,39 @@
-const productsDiv = document.querySelector('.productArea')
+const productsDiv = document.querySelector('.productArea');
+const select = document.querySelector('.slct');
+let allProducts = [];
+let mensCloth = [];
 
 fetch('https://fakestoreapi.com/products')
   .then(response => response.json())
   .then(products => {
-       products.forEach(product => {
-         const div  = document.createElement('div');
-        //  if(product.category === "women's clothing") {
-        //      div.style.display = 'none'
-        //  }
+       allProducts = products;
+       renderProducts(allProducts);
+       mensCloth =  products.filter(product  => 
+        product.category === "men's clothing"
+
+      )
+      
+
+  })
+
+  select.addEventListener('change', () => {
+     const value = select.value;
+
+     if(value === 'All item') {
+       renderProducts(allProducts)
+     } else if(value === "Men's Clothes") {
+       renderProducts(mensCloth)
+     }
+     
+  });
+
+  const renderProducts = (products) => {
+       productsDiv.innerHTML = ''
+  
+
+   products.forEach(product => {
+     const div = document.createElement('div')
+   
 
          div.innerHTML = `
           <img class = 'images' src='${product.image}'>
@@ -18,5 +44,5 @@ fetch('https://fakestoreapi.com/products')
          `;
        
       productsDiv.appendChild(div)
-       })
-  })
+  });
+}
