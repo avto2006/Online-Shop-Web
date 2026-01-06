@@ -19,7 +19,7 @@ fetch('https://fakestoreapi.com/products')
        renderProducts(allProducts)
      } else {
       const filtred = allProducts.filter(product => {
-         product.category === value
+        return product.category === value
       });
       renderProducts(filtred)
       
