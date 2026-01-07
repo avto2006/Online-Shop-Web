@@ -82,7 +82,11 @@ span {
      background-color: silver;
      color: white;
      border: 2px solid black;
-     
+}
+
+.buy:hover {
+    background-color: rgb(87, 85, 85);
+    transition: 2s ease-in;
 }
 
 .user {
