@@ -2,6 +2,30 @@ const productsDiv = document.querySelector('.productArea');
 const select = document.querySelector('.slct');
 let allProducts = [];
 let mensCloth = [];
+let languages = ['ka', 'en'];
+const langSelector = document.querySelector('.lang');
+
+
+
+
+
+
+const texts = {
+  title: {
+     ka: 'ონლაინ მაღაზია',
+     en: 'Online Shop'
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 fetch('https://fakestoreapi.com/products')
   .then(response => response.json())
