@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(103, 102, 102);
+    background-color: silver;
 }
 
 main {
@@ -35,9 +35,10 @@ main {
 }
 
 .productArea div {
-    background-color: rgb(184, 182, 182);
+    background-color: rgb(217, 217, 217);
     padding: 5vh;
     height: 400px;
+    border: 2px dashed red;
     justify-content: space-between;
     text-align: center;
     border-radius: 15px;
