@@ -3,27 +3,7 @@ const select = document.querySelector('.slct');
 let allProducts = [];
 let mensCloth = [];
 let languages = ['ka', 'en'];
-const langSelector = document.querySelector('.lang');
-
-
-
-
-
-
-const texts = {
-  title: {
-     ka: 'ონლაინ მაღაზია',
-     en: 'Online Shop'
-  }
-}
-
-
-
-
-
-
-
-
+let buy = document.querySelectorAll('.buy');
 
 
 
@@ -70,3 +50,13 @@ fetch('https://fakestoreapi.com/products')
       productsDiv.appendChild(div)
   });
 }
+
+const buyItem = () => {
+  productsDiv.addEventListener('click', (e) => {
+     if(e.target.classList.contains('buy')) {
+      alert('The item has been purchased.')
+     }
+  })
+}
+
+buyItem()
