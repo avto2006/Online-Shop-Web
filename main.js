@@ -13,9 +13,10 @@ fetch('https://fakestoreapi.com/products')
   .then(products => {
        allProducts = products;
        renderProducts(allProducts);
-
-
       })
+  .catch(err => {
+     console.log(`Error: ${err}`);
+  })
 
   select.addEventListener('change', () => {
      const value = select.value;

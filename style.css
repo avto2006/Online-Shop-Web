@@ -116,7 +116,7 @@ a {
 h1 {
     color: white;
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: black;
 }
 
 .slct {
@@ -133,7 +133,7 @@ h1 {
 .logo {
     color: white;
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: black;
     cursor: pointer;
 }
 
