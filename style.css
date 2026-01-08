@@ -138,9 +138,21 @@ h1 {
 }
 
 
-@media screen and (max-width: 690px ) {
+@media screen and (max-width: 680px ) {
      .productArea {
        grid-template-columns: repeat(1, 1fr);
+     }
+
+     .search {
+        display: none;
+     }
+
+     header {
+        gap: 2vh;
+     }
+
+     .slct {
+        margin-right: -5vh;
      }
 }
 
