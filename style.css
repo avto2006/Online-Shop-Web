@@ -138,3 +138,11 @@ h1 {
 }
 
 
+@media screen and (max-width: 500px ) {
+     .productArea {
+        display: grid;
+        grid-template-columns: 1 1fr;
+     }
+}
+
+
